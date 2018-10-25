@@ -1,0 +1,155 @@
+/* universal styles */
+/* * {
+  border: 1px solid green;
+} */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+}
+ /* Header section */
+.site-header {
+  background-color: GhostWhite;
+  width: 100%;
+}
+.site-header-content {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 0;
+  border-bottom: 1px solid DimGray;
+  flex-wrap: wrap;
+}
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#site-branding {
+  font-family: 'Pirata One', cursive;
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: DimGray;
+}
+.top-nav {
+  display: inline-flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+.top-nav-item {
+  display: inline-block;
+  padding: 0 18px;
+}
+.top-nav-item a {
+  font-size: 18px;
+  color: #697681;
+}
+.top-nav-item a:hover{
+  color: #3b4249;
+}
+.top-nav-item .login-button {
+  border: 1px solid black;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+.top-nav-item .login-button:hover {
+  color: GhostWhite;
+  background-color: black;
+}
+
+/* Catagory Dropdown Section*/
+#catagory-title {
+  display: inline-block;
+  min-width: 90px;
+}
+.catagory-dropdown {
+  position: relative;
+}
+/* .catagory-dropdown:hover #catagory-list {
+  display: block;
+} */
+#catagory-list {
+  display: block;
+  position: absolute;
+  width: 100%; /* the same width as catagory box */
+  left: 0;  /* position relative to catagory box */
+  padding-top: 12px;
+  z-index: 21;
+  background-color: GhostWhite;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* box-shadow property to make the dropdown menu look like a "card" */
+  text-align: center;
+}
+#catagory-list a {
+  display: block;
+  padding: 4px; /* more readable */
+}
+#catagory-list a:hover {
+  color: GhostWhite;
+  background-color: black;
+}
+
+.main {
+  height: 1400px;
+  width: 600px;
+  margin: 0 auto;
+  background-color: cyan;
+}
+
+/* scroll to top section */
+#scroll-to-top {
+    display: none;
+    position: fixed; /* Fixed position */
+    bottom: 42px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    outline: none; /* Remove outline */
+    border: none;
+    background-color: transparent;
+}
+
+/* site footer */
+.site-footer {
+  background-color: black;
+  padding: 14px 0;
+}
+.site-footer-content {
+  width: 80%;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.9);
+}
+.site-footer-content a {
+  color: inherit;
+}
+.site-footer-content a::before{
+  position: relative;
+  bottom: 4px;
+  right: 10px;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: GhostWhite;
+  border-radius = 100%;
+}
+.site-footer-content a:first-of-type::before{
+  display: none;
+}
+.copyright, .social-nav {
+  display: inline-block;
+}
+.copyright {
+  width: 49.49%;
+}
+.social-nav {
+  width: 49.49%;
+  text-align: right;
+}
+.social-nav a {
+  margin-left: 20px;
+}

@@ -1,0 +1,184 @@
+/* Universal style  */
+/* * {
+  border: 1px solid green;
+} */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Nunito Sans', sans-serif;
+}
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+h1 {
+  color: DimGray;
+}
+/* common style */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-box {
+  width: 80%;
+  margin: 0 auto;
+}
+/* scroll to top section */
+#scroll-to-top {
+    display: none;
+    position: fixed; /* Fixed position */
+    bottom: 52px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    outline: none; /* Remove outline */
+    border: none;
+    background-color: transparent;
+}
+/* Header section  */
+.site-header {
+  margin: 8px 0 12px 0;
+}
+.site-header .flex-container{
+  border-bottom: 1px solid DimGray;
+  padding-bottom: 6px;
+  font-size: 16px;
+  color: #697681;
+}
+/* Logo site */
+#site-branding {
+  font-family: 'Pirata One';
+  font-size: 36px;
+  letter-spacing: 0px;
+  color: DimGray;
+}
+.top-navigation{   /* for top item nav */
+  flex-grow: 1;
+  display: inline-flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top-navigation span { /* align top nav item */
+  margin-left: 32px;
+}
+
+/* Catagory dropdown list section */
+.catagory-dropdown {
+  position: relative;
+  padding: 0 24px;
+}
+#catagory-title {
+  display: inline-block;
+  min-width: 90px;
+}
+#catagory-list {
+  display: none;
+  position: absolute;
+  width: 100%; /* the same width as catagory box */
+  left: 0;  /* position relative to catagory box */
+  padding-top: 12px;
+  z-index: 21;
+  background-color: GhostWhite;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* box-shadow property to make the dropdown menu look like a "card" */
+  text-align: center;
+}
+#catagory-list a {
+  display: block;
+  padding: 4px; /* more readable */
+}
+#catagory-list a:hover {
+  color: GhostWhite;
+  background-color: black;
+}
+.catagory-dropdown:hover #catagory-list {
+  display: block;
+}
+
+
+/* Login button  */
+#login-button {
+  display: block;
+  border: 1px solid black;
+  padding: 6px 16px;
+  border-radius: 4px;
+}
+#login-button:hover {
+  color: GhostWhite;
+  background-color: black;
+}
+
+.body-content {
+  padding:  16px;
+  margin-bottom: 20px;
+  min-height: 450px;
+}
+/* Register section from w3school howto*/
+
+/* Add a background color when the inputs get focus */
+#register-content input[type=text]:focus, #register-content input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+/* Full-width input fields */
+#register-content input[type=text], #register-content input[type=password] {
+    box-sizing: border-box;
+    display: inline-block;
+    width: 100%;
+    padding: 15px;
+    border: none;
+    background: #f1f1f1;
+}
+/* Set a style for all buttons */
+#register-content .sumbit-button {
+    background-color: DimGray;
+    color: GhostWhite;
+    font-size: 18px;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Style the horizontal ruler */
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+
+/* Footer section */
+.site-footer {
+  background-color: DimGray;
+  color: GhostWhite;
+  padding: 16px 0;
+}
+.site-footer .flex-container{
+  flex-wrap: wrap;
+}
+#social-contact {
+  display: block;
+  text-align: right;
+  flex-grow: 1;
+}
+#social-contact a {
+  margin: 5px;
+}
+#social-contact a::before{
+  position: relative;
+  bottom: 4px;
+  right: 10px;
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 2px;
+  background-color: GhostWhite;
+  border-radius = 100%;
+}
+#social-contact a:first-of-type::before{
+  display: none;
+}
