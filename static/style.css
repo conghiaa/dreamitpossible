@@ -1,11 +1,14 @@
 /* Universal style  */
-/* * {
-  border: 1px solid green;
-} */
+
+html {
+  position: relative; /* to support site-footer */
+  min-height: 100%;
+}
 html, body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
+  background-color: snow;
 }
 a {
   cursor: pointer;
@@ -27,6 +30,15 @@ h1 {
 .center-box {
   width: 80%;
   margin: 0 auto;
+}
+.hover-underlink {
+  text-decoration: none;
+}
+.hover-underlink:hover {
+  text-decoration: underline;
+}
+.to-right { /* only for block-like element */
+  text-align: right;
 }
 /* scroll to top section */
 #scroll-to-top {
@@ -115,17 +127,21 @@ h1 {
 .body-content {
   padding:  16px;
   margin-bottom: 20px;
-  min-height: 450px;
 }
-/* Register section from w3school howto*/
+/* Register section from w3school howto */
+.form-content {
+  padding-top: 30px;
+  /* border: 1px solid green; */
+  margin-bottom: 60px;
+}
 
 /* Add a background color when the inputs get focus */
-#register-content input[type=text]:focus, #register-content input[type=password]:focus {
+.form-content input[type=text]:focus, .form-content input[type=password]:focus {
     background-color: #ddd;
     outline: none;
 }
 /* Full-width input fields */
-#register-content input[type=text], #register-content input[type=password] {
+.form-content input[type=text], .form-content input[type=password] {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
@@ -134,16 +150,25 @@ h1 {
     background: #f1f1f1;
 }
 /* Set a style for all buttons */
-#register-content .sumbit-button {
+.form-content .sumbit-button {
     background-color: DimGray;
     color: GhostWhite;
     font-size: 18px;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
+    border-radius: 4px;
     width: 100%;
     opacity: 0.9;
 }
+.form-content .outlink-form {
+  font-size: 1.1em;
+  padding: 9px;
+  color: #6400e4;
+  display: block;
+}
+
+
 
 /* Style the horizontal ruler */
 hr {
@@ -152,7 +177,12 @@ hr {
 }
 
 /* Footer section */
-.site-footer {
+.site-footer { /* absolute for always stick to buttom screen */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: none;
   background-color: DimGray;
   color: GhostWhite;
   padding: 16px 0;
