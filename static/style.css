@@ -1,5 +1,4 @@
 /* Universal style  */
-
 html {
   position: relative; /* to support site-footer */
   min-height: 100%;
@@ -8,7 +7,7 @@ html, body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
-  background-color: snow;
+  background-color: GhostWhite;
 }
 a {
   cursor: pointer;
@@ -39,6 +38,16 @@ h1 {
 }
 .to-right { /* only for block-like element */
   text-align: right;
+}
+
+.btn {
+  display: inline-block;
+  text-align: center;
+  border-color: DimGray;
+  background-color: DimGray;
+  color: GhostWhite;
+  font-size: 16px;
+  border-radius: 4px;
 }
 /* scroll to top section */
 #scroll-to-top {
@@ -126,7 +135,8 @@ h1 {
 
 .body-content {
   padding:  16px;
-  margin-bottom: 20px;
+  margin-top: 32px;
+  margin-bottom: 120px;
 }
 /* Register section from w3school howto */
 .form-content {
@@ -134,7 +144,9 @@ h1 {
   /* border: 1px solid green; */
   margin-bottom: 60px;
 }
-
+.form-content .field {
+  margin-bottom: 18px;
+}
 /* Add a background color when the inputs get focus */
 .form-content input[type=text]:focus, .form-content input[type=password]:focus {
     background-color: #ddd;
@@ -169,11 +181,22 @@ h1 {
 }
 
 
-
 /* Style the horizontal ruler */
 hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
+}
+
+
+/* posts navigation section */
+.posts-navigation {
+  display: flex;
+  justify-content: space-around;
+}
+.posts-navigation .nav-next, .posts-navigation .nav-previous{
+  border-radius: 4px;
+  padding: 8px 32px;
+
 }
 
 /* Footer section */
