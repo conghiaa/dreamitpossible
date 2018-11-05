@@ -20,6 +20,9 @@ button {
 h1 {
   color: DimGray;
 }
+textarea {
+  resize: vertical;
+}
 /* common style */
 .flex-container {
   display: flex;
@@ -63,7 +66,7 @@ h1 {
 }
 /* Header section  */
 .site-header {
-  margin: 8px 0 12px 0;
+  margin: 12px 0;
 }
 .site-header .flex-container{
   border-bottom: 1px solid DimGray;
@@ -120,7 +123,13 @@ h1 {
   display: block;
 }
 
-
+/* site heading */
+.site-heading {
+  border-bottom: 1px solid #eeeeee;
+}
+.site-heading h1 {
+  margin-bottom: 8px;
+}
 /* Login button  */
 #login-button {
   display: block;
@@ -140,7 +149,6 @@ h1 {
 }
 /* Register section from w3school howto */
 .form-content {
-  padding-top: 30px;
   /* border: 1px solid green; */
   margin-bottom: 60px;
 }
@@ -153,7 +161,7 @@ h1 {
     outline: none;
 }
 /* Full-width input fields */
-.form-content input[type=text], .form-content input[type=password] {
+.form-content input[type=text], .form-content input[type=password], .form-content textarea {
     box-sizing: border-box;
     display: inline-block;
     width: 100%;
@@ -161,6 +169,7 @@ h1 {
     border: none;
     background: #f1f1f1;
 }
+
 /* Set a style for all buttons */
 .form-content .sumbit-button {
     background-color: DimGray;
